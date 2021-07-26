@@ -1,0 +1,11 @@
+## yarn sequelize db:create 
+ - Usado para criar a tabela no banco
+
+## yarn sequelize migration:create --name=create-users
+ - Usado para criar uma migration
+
+## yarn sequelize db:migrate
+ - Executa as migrations
+
+## yarn sequelize db:migrate:undo
+ - Desfaz a ultima migration
