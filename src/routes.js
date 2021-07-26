@@ -36,6 +36,7 @@ routes.post(
   celebrate({
     [Segments.BODY]: {
       name: Joi.string().required(),
+      url: Joi.string().required(),
     },
   }),
   authMiddleware,

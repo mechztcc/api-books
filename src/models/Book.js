@@ -6,6 +6,7 @@ class Book extends Model {
       {
         name: DataTypes.STRING,
         user_id: DataTypes.INTEGER,
+        url: DataTypes.STRING,
       },
       { sequelize: connection }
     );

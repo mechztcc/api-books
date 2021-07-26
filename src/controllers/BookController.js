@@ -16,7 +16,7 @@ module.exports = {
   },
 
   async store(req, res) {
-    const { name } = req.body;
+    const { name, url } = req.body;
     const user_id = req.userId;
 
     const user = await User.findByPk(user_id);
@@ -26,6 +26,7 @@ module.exports = {
 
     const book = await Book.create({
       name,
+      url,
       user_id: req.userId,
     });
 
